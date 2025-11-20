@@ -6,7 +6,7 @@
 /*   By: pamuller <pamuller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:46:26 by pamuller          #+#    #+#             */
-/*   Updated: 2025/11/20 11:22:34 by pamuller         ###   ########.fr       */
+/*   Updated: 2025/11/20 14:23:29 by pamuller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ int	ft_printf(const char *s, ...)
 	int		check;
 
 	char_written = 0;
+	if (!s)
+		return (-1);
 	va_start(argptr, s);
 	while (*s)
 	{
