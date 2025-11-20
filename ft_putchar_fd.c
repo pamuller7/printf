@@ -6,9 +6,11 @@
 /*   By: pamuller <pamuller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:34:38 by pamuller          #+#    #+#             */
-/*   Updated: 2025/11/17 13:56:59 by pamuller         ###   ########.fr       */
+/*   Updated: 2025/11/20 11:19:10 by pamuller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	ft_putchar_fd(char c, int fd)
 {

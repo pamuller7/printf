@@ -6,7 +6,7 @@
 /*   By: pamuller <pamuller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:46:26 by pamuller          #+#    #+#             */
-/*   Updated: 2025/11/17 13:38:35 by pamuller         ###   ########.fr       */
+/*   Updated: 2025/11/20 11:22:34 by pamuller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ static int	check_next_attribute(va_list argptr, char c)
 		return (print_arg_int(argptr, c));
 	else if (c == 'u' || c == 'x' || c == 'X' || c == 'p')
 		return (print_arg_unsigned(argptr, c));
-	return (0);
+	return (-1);
 }
 
 int	ft_printf(const char *s, ...)
